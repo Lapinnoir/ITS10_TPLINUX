@@ -32,8 +32,8 @@ chown -R JackMorrisson home/JackMorrisson && echo 'Cet utilisateur a obtenu les 
 chmod -R 700 home/Jack Morrisson && echo 'Seul cet utilisateur a accès à son dossier personnel.'
 
 
-#On met Tracer comme propriétaire du script hey.sh et on lui donne les droits d'execution
-chown -R home/Tracer && chmod 744 home/Tracer/Hey\!.sh && echo 'L'utilisateur peut excecuter son script.'
+#On met Tracer comme propriétaire du script Hey!.sh et on lui donne les droits d'execution
+chown -R home/Tracer && chmod 744 home/Tracer/Hey\!.sh && echo 'L'utilisateur peut executer son script.'
 
 #On retire les droits d'écriture au dossier info
 chmod 744 home/info && echo 'Le dossier info n'est plus en écriture'
