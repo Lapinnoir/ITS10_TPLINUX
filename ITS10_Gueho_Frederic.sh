@@ -6,13 +6,13 @@
 #on se place dans le dossier racine
 cd / && echo "dossier racine"
 #on ajoute l'utilisateur JackMorrison
-useradd  -m -d /home/JackMorrison -s /bin/bash -p $(echo JackMorrison | openssl passwd -1 -stdin) JackMorrison && echo "utilisateur JackMorrison créer"
+useradd  -m -d /home/JackMorrison -s /bin/bash -p $(echo JackMorrison | openssl passwd JackMorrison) JackMorrison && echo "utilisateur JackMorrison créer"
 
 #on ajoute l'utilisateur Tracer
-useradd  -m -d /home/Tracer -s /bin/bash -p $(echo Tracer | openssl passwd -1 -stdin) Tracer && echo "utilisateur Tracer créer"
+useradd  -m -d /home/Tracer -s /bin/bash -p $(echo Tracer | openssl passwd Tracer) Tracer && echo "utilisateur Tracer créer"
 
 #on creer l'uilisateur Fatale
-useradd  -m -d /home/Fatale -s /bin/bash -p $(echo Fatale | openssl passwd -1 -stdin) Fatale && echo "utilisateur Fatale créer"
+useradd  -m -d /home/Fatale -s /bin/bash -p $(echo Fatale | openssl passwd Fatale) Fatale && echo "utilisateur Fatale créer"
 #on ajoute un groupe Overwatch
 addgroup --force-badname Overwatch && echo "groupe overwatch créer"
 
