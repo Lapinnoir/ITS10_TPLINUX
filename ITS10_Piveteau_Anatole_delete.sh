@@ -8,8 +8,8 @@
 #									#
 # Remove all user files and user
 echo "Remove users and users files"
-userdel -r -f Tracer
-userdel -r -f Fatale
-userdel -r -f JimMorison
+userdel --remove-all-files -f Tracer
+userdel --remove-all-files -f Fatale
+userdel --remove-all-files -f JimMorison
 echo "Remove directory LaGriffe"
 rm -rf /home/info /home/LaGriffe
