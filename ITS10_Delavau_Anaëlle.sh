@@ -15,7 +15,7 @@ useradd -m -s /bin/bash -p "`openssl passwd jackP@ssword`" JackMorrisson && echo
 useradd -m -s /bin/bash -p "`openssl passwd tracerP@ssword`" Tracer && echo 'Tracer a été ajoutée.'
 useradd -m -s /bin/bash -p "`openssl passwd fataleP@ssword`" Fatale && echo 'Fatale a été ajoutée.'
 
-usermod -aG Overwatch JimMorrisson && echo 'Cet utilisateur a été ajouté au groupe Overwatch.'
+usermod -aG Overwatch JackMorrisson && echo 'Cet utilisateur a été ajouté au groupe Overwatch.'
 usermod -aG Overwatch Tracer && echo 'Cet utilisateur a été ajouté au groupe Overwatch.'
 
 
@@ -25,11 +25,11 @@ touch home/LaGriffe/Gantelet_Infini/plan.txt || touch home/LaGriffe/blackwatch.s
 
 
 #On donne les droits utilisateurs à Fatale et on attribue le groupe Overwatch en lecture seule
-chown Fatale:Overwatch home/LaGriffe/Gantelet_Infini && chmod 740 home/LaGriffe/Gantelet_Infini && echo 'Les droits utilisateurs pour le dossier Gantelet_Infini ont été modifiés'
+chown Fatale:Overwatch home/LaGriffe/Gantelet_Infini && chmod 140 home/LaGriffe/Gantelet_Infini && echo 'Les droits utilisateurs pour le dossier Gantelet_Infini ont été modifiés'
 
-#On interdit l'accès au dossier personnel de Jim Morrisson, sauf à son propriétaire
+#On interdit l'accès au dossier personnel de Jack Morrisson, sauf à son propriétaire
 chown -R JackMorrisson home/JackMorrisson && echo 'Cet utilisateur a obtenu les droits de son dossier personnel.'
-chmod -R 700 home/Jim Morrisson && echo 'Seul cet utilisateur a accès à son dossier personnel.'
+chmod -R 700 home/Jack Morrisson && echo 'Seul cet utilisateur a accès à son dossier personnel.'
 
 
 #On met Tracer comme propriétaire du script hey.sh et on lui donne les droits d'execution
