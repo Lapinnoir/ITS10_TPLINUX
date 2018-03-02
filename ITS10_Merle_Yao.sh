@@ -28,27 +28,27 @@ mkdir /home/LaGriffe/Gantelet_Infini && echo 'Que Onda hahaha'
 
 #attribution des droits sur le fichier aux utilisateurs
 
-chown JackMorrison /home/LaGriffe/Gantelet_Infini;
-chown JackMorrison /home/LaGriffe/Gantelet_Infini;
-chown Fatale:Overwatch /home/LaGriffe/Gantelet_Infini
-chmod 640
+chown JackMorrison /home/LaGriffe/Gantelet_Infini && echo "repertoire utilisateur"
+chown JackMorrison /home/LaGriffe/Gantelet_Infini && echo "repertoire utilisateur"
+chown Fatale:Overwatch /home/LaGriffe/Gantelet_Infini && && echo "repertoire admin"
+chmod 640 && echo "droit des utilisateur"
 
 #creation de script pour l'utilisateur "fatale"
 
-mkdir /home/LaGriffe/script;
-touch /home/LaGriffe/script/blackwatch.sh
+mkdir /home/LaGriffe/script &&  echo "creation dossier script"
+touch /home/LaGriffe/script/blackwatch.sh 
 echo 'un tir, un mort'
 
 #creation de script pour l'utilisateur tracer
 
-mkdir /home/Tracer/dossierperso;
-chown -r Tracer /home/Tracer/dossierperso
-touch /home/Tracer/dossierperso/hey.sh
+mkdir /home/Tracer/dossierperso && echo "creation dossier perso pour Tracer"
+chown -r Tracer /home/Tracer/dossierperso && echo "droit de tracer sur le dossier perso"
+touch /home/Tracer/dossierperso/hey.sh && echo "creation script hey"
 echo salut mon chou! la cavalerie est arrivée
 
-#création du dossier home info
+#création du dossier home info && echo "creation dossier home info"
 mkdir /home/info
-chown -r Tracer /home/info
+chown -r Tracer /home/info && echo "droit de tracer sur dossier home info"
 
 
 
