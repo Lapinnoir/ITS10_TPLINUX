@@ -4,12 +4,9 @@
 #alexisbrohan68@gmail.com
 
 #Création des users
-useradd JackMorrison -m -s /home/JackMorrison/bash && echo "User JackMorrison crée"
-passwd JackMorrison
-useradd Tracer -m -s /home/Tracer/bash && echo "User Tracer crée"
-passwd Tracer
-useradd Fatale -m -s /home/Fatale/bash && echo "User Fatale crée"
-passwd Fatale
+useradd JackMorrison -m -s /home/JackMorrison/bash -p "openssl passwd root" && echo "User JackMorrison crée"
+useradd Tracer -m -s /home/Tracer/bash -p "openssl passwd root" && echo "User Tracer crée"
+useradd Fatale -m -s /home/Fatale/bash -p "openssl passwd root" && echo "User Fatale crée"
 
 #Création groupe
 addgroup --force-badname Overwatch && echo "Groupe Overwatch crée"
