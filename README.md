@@ -1,6 +1,6 @@
 # ITS10_TPLINUX
 votre script doit avoir le format : ITS10_Nom_Prénom.sh
-Si les consignes ne sont pas respecter alors vous aurez 0
+Si les consignes ne sont pas respectées alors vous aurez 0
 Si votre script est moche alors vous aurez 0
 
 Votre script doit être beau :
