@@ -12,4 +12,5 @@ Faites une fenêtre contenant :
   votre contact
   
   Sur chaque execution fait connaitre le résultat ex: useradd JackMorrison && echo " création du soldat76"
+  
   Commenter votre script ! 
