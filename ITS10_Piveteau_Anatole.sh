@@ -32,7 +32,7 @@ useradd -u 131313 -d /home/LaGriffe -s /bin/bash -p $(echo fatale | openssl pass
 echo "Create script file blackwatch.sh in LaGriffe/Gantelet_Infini/Script"
 echo 'echo "un tir, un mort."\n'>/home/LaGriffe/Gantelet_Infini/Script/blackwatch.sh
 echo "Create script file Hey!.sh in Tracer/"
-echo 'echo Salut mon chou ! La cavalerie est arrivée\n'>/home/Tracer/Hey!.sh 
+echo 'echo Salut mon chou ! La cavalerie est arrivée\n'>/home/Tracer/Hey\!.sh 
 echo "Give access to Fatale to directory Gantelet_Infini\n"
 chown -R Fatale:Fatale /home/LaGriffe/Gantelet_Infini/
 echo "Give Tracer access to Tracer/Hey!.sh script\n"
