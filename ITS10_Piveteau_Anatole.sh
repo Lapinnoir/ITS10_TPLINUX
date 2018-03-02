@@ -12,7 +12,7 @@ echo "Change directory to home\n"
 cd ~/..
 # Create directory			#
 echo "Creating directory:\n\t_ LaGriffe\n\t_ LaGriffe/Gantelet_Infini\n\t_ LaGriffe/Gantelet_Infini\Script\n\t_ JimMorrison\n\t_ Tracer\n\t_ info\n\n"
-mkdir /home/LaGriffe /home/LaGriffe/Gantelet_Infini /home/JimMorrison /home/Tracer /home/LaGriffe/Gantelet_Infini/Script home/info
+mkdir /home/LaGriffe /home/LaGriffe/Gantelet_Infini /home/LaGriffe/Gantelet_Infini/Script home/info
 # Create user group Overwatch
 echo "Create group Overwatch\n"
 groupadd -f Overwatch
@@ -25,8 +25,8 @@ echo "Que Onda hahaha\n" > /home/LaGriffe/Gantelet_Infini/plan.txt
 #	- Tracer - tracer		#
 #	- Fatale - fatale		#
 echo "Create users :\n\tTracer\n\tJimMorrison\n\tFatale"
-useradd -u 111111 -g Overwatch -d /home/JimMorrison -s /bin/bash -p $(echo jimmorrison | openssl passwd -1 -stdin) JimMorrison
-useradd -u 121212 -g Overwatch -d /home/Tracer -s /bin/bash -p $(echo tracer | openssl passwd -1 -stdin) Tracer
+useradd -u 111111 -g Overwatch -m -d /home/JimMorrison -s /bin/bash -p $(echo jimmorrison | openssl passwd -1 -stdin) JimMorrison
+useradd -u 121212 -g Overwatch -m -d /home/Tracer -s /bin/bash -p $(echo tracer | openssl passwd -1 -stdin) Tracer
 useradd -u 131313 -d /home/LaGriffe -s /bin/bash -p $(echo fatale | openssl passwd -1 -stdin) Fatale
 # CREATE SCRIPT AND GIVE RIGHT		#
 echo "Create script file blackwatch.sh in LaGriffe/Gantelet_Infini/Script"
